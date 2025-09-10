@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #d45d23;  /* Royal Feast header color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu h2 {
+    font-size: 28px;
+    color: #d45d23;
+    margin-bottom: 20px;
+}
+
+/* Recipe Grid Layout */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsive grid */
+    gap: 30px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 500px;  /* Increase height for better uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);  /* Hover effect */
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 300px;  /* Increase height for better visibility of images */
+    object-fit: cover;  /* Ensures the image covers the area without distorting */
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #d45d23;
+    font-weight: bold;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.recipe-card .price {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #333;
+}
+
+body.dark-mode .recipe-card {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .theme-toggle button {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .theme-toggle button:hover {
+    background-color: #444;
+}
+
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .recipe-grid {
+        grid-template-columns: 1fr 1fr;  /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-grid {
+        grid-template-columns: 1fr;  /* 1 item per row on small screens */
+    }
+}
