@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipe Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Healthy Recipe Recommender</h1>
+        <div class="theme-toggle">
+            <button onclick="toggleTheme()">🌙 / 🌞</button>
+        </div>
+    </header>
+
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <img src="https://uploads.onecompiler.io/43v7rtdcb/43v8gmx8m/-avocado-salad-secondary-64f1039808ffd.jpg"alt="Recipe1 ">         
+             <h2>Avocado Salad</h2>
+            <ul>
+                <li>2 Avocados</li>
+                <li>1 Cucumber</li>
+                <li>Tomatoes</li>
+                <li>Lemon</li>
+                <li>Olive Oil</li>
+            </ul>
+            <p>Calories: 150 per serving</p>
+        </div>
+
+
+<!-- <img src="https://www.eatwell101.com/wp-content/uploads/2021/08/Cucumber-Avocado-Salad-recipe.jpg" alt=""> -->
+
+
+
+        <div class="recipe-card">
+            <img src="https://uploads.onecompiler.io/43v7rtdcb/43v8gmx8m/2.jpg" alt="Recipe 2">
+            <h2>Grilled Chicken</h2>
+            <ul>
+                <li>Chicken Breast</li>
+                <li>Garlic</li>
+                <li>Lemon Juice</li>
+                <li>Olive Oil</li>
+            </ul>
+            <p>Calories: 220 per serving</p>
+        </div>
+
+        <div class="recipe-card">
+            <img src="https://uploads.onecompiler.io/43v7rtdcb/43v8gmx8m/3.jpg" alt="Recipe 3">
+            <h2>Fruit Smoothie</h2>
+            <ul>
+                <li>Banana</li>
+                <li>Blueberries</li>
+                <li>Yogurt</li>
+                <li>Honey</li>
+            </ul>
+            <p>Calories: 180 per serving</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
